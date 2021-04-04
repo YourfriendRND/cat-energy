@@ -1,0 +1,52 @@
+// Файлы стилей проекта
+// "helpers" - Переменные и миксины
+@import "helpers/variables.scss";
+// "base" - Шрифты, глобальные стили
+@import "base/fonts.scss";
+@import "base/global_styles.scss";
+// "components" - Повторяющиеся блоки на страницах (Центровщики, шапка, подвал)
+@import "components/header.scss";
+@import "components/header-main.scss";
+@import "components/main-navigation.scss";
+@import "components/navigation-list.scss";
+@import "components/footer.scss";
+@import "components/footer-contacts.scss";
+@import "components/footer-map.scss";
+@import "components/footer-down-part.scss";
+@import "components/footer-logo.scss";
+@import "components/copyright.scss";
+@import "components/networks-list.scss";
+@import "components/header-wrapper-container.scss";
+@import "components/main-wrapper-container.scss";
+@import "components/footer-wrapper-container.scss";
+@import "components/wrapper-contacts-container.scss";
+// Стили основных блоков index.html
+@import "blocks/index-page/general-info.scss";
+@import "blocks/index-page/program-description.scss";
+@import "blocks/index-page/work-description.scss";
+@import "blocks/index-page/work-point-list.scss";
+@import "blocks/index-page/example.scss";
+@import "blocks/index-page/example-data.scss";
+@import "blocks/index-page/example-slider.scss";
+@import "blocks/index-page/example-pictures.scss";
+@import "blocks/index-page/example-range-controls.scss";
+// Стили основных блоков form.html
+@import "blocks/form-page/questionnaire-basic.scss";
+@import "blocks/form-page/questionnaire-form.scss";
+@import "blocks/form-page/questionnaire-pet-info.scss";
+@import "blocks/form-page/questionnaire-program-filter.scss";
+@import "blocks/form-page/questionnaire-radio-list.scss";
+@import "blocks/form-page/questionnaire-owner.scss";
+@import "blocks/form-page/questionnaire-owner-info.scss";
+@import "blocks/form-page/questionnaire-extra-info.scss";
+@import "blocks/form-page/questionnaire-additionally.scss";
+@import "blocks/form-page/questionnaire-add-list.scss";
+@import "blocks/form-page/questionnaire-footnotes.scss";
+@import "blocks/form-page/questionnaire-legend.scss";
+// Стили основных блоков catalog.html
+@import "blocks/catalog-page/products.scss";
+@import "blocks/catalog-page/product-list.scss";
+@import "blocks/catalog-page/product-more-items.scss";
+@import "blocks/catalog-page/extra-products.scss";
+@import "blocks/catalog-page/extra-product-list.scss";
+@import "blocks/catalog-page/gift.scss";

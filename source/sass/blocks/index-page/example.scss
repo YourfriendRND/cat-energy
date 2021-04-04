@@ -1,0 +1,111 @@
+.example {
+  background-color: $basic-gray;
+  margin-top: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white-color;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 3px;
+      left: 0;
+      background-color: $menu-item-gray;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.example__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: (709px*100%)/$tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 65%;
+    margin-left: (110px*100%)/720px;
+    background-color: $basic-gray;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+.example__headline {
+  width: 87.5%;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black-color;
+  padding-top: 26px;
+  padding-bottom: 33px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: (709px*100%)/$tablet-width;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 45px;
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: (110px*100%)/$desktop-width;
+    background-color: $basic-white-color;
+    padding-top: 24px;
+    padding-bottom: 76px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.example__text {
+  font-family: $Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  margin: 0;
+  width: 102%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 96%;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 95%;
+    padding: 70px 0;
+  }
+}
+
+.example__text br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}

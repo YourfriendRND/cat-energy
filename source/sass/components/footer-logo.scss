@@ -1,0 +1,39 @@
+.footer-logo {
+  //@include outline;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer-logo__index-page {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer-logo__name {
+  width: 128px;
+  height: 30px;
+  padding-top: 37px;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
+  }
+
+  &--form-page {
+    padding-top: 32px;
+  }
+}

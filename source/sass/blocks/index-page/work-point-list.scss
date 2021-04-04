@@ -1,0 +1,249 @@
+.work-point-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.work-point-list__item {
+  font-family: $Arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  padding-top: 3px;
+  padding-left: 79px;
+  padding-bottom: 23px;
+  position: relative;
+  max-width: 480px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 145px;
+    padding-left: 0;
+    padding-bottom: 55px;
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 100px;
+    }
+  }
+
+  &:nth-child(even) {
+    @media (min-width: $tablet-width) {
+      margin-left: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 45px;
+
+    @media (min-width: $tablet-width) {
+      width: 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+    }
+  }
+
+  &--nutrients {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-color: $basic-green;
+      background-image: url("../img/icon-leaf.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-width: $tablet-width) {
+        top: 33px;
+        width: 80px;
+        height: 80px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 34px;
+      }
+    }
+
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "1";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        font-family: $Oswald;
+        top: -6px;
+        left: 119px;
+        z-index: -1;
+        color: $basic-gray;
+      }
+    }
+  }
+
+  &--release {
+    @media (min-width: 378px) {
+      max-width: 250px;
+    }
+
+    @media (min-width: 397px) {
+      max-width: 450px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-color: $basic-green;
+      background-image: url("../img/icon-tub.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-width: $tablet-width) {
+        top: 33px;
+        left: 2px;
+        width: 80px;
+        height: 80px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 34px;
+      }
+    }
+
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "2";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        font-family: $Oswald;
+        top: -5px;
+        left: 115px;
+        z-index: -1;
+        color: $basic-gray;
+      }
+    }
+  }
+
+  &--change {
+    @media (min-width: 378px) {
+      max-width: 255px;
+    }
+
+    @media (min-width: 397px) {
+      max-width: 450px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-color: $basic-green;
+      background-image: url("../img/icon-eat.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-width: $tablet-width) {
+        top: 33px;
+        width: 80px;
+        height: 80px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 34px;
+        left: 3px;
+      }
+    }
+
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "3";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        font-family: $Oswald;
+        top: -5px;
+        left: 115px;
+        z-index: -1;
+        color: $basic-gray;
+      }
+    }
+  }
+
+  &--time {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-color: $basic-green;
+      background-image: url("../img/icon-alarm.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-width: $tablet-width) {
+        top: 33px;
+        left: 2px;
+        width: 80px;
+        height: 80px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 34px;
+        left: 5px;
+      }
+    }
+
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "4";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        font-family: $Oswald;
+        top: -5px;
+        left: 115px;
+        z-index: -1;
+        color: $basic-gray;
+      }
+    }
+  }
+}
+
+.work-point-list__item br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}

@@ -1,0 +1,15 @@
+.footer-wrapper-container {
+  width: 87.5%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: (709px*100%)/$tablet-width;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: (1220px*100%)/$desktop-width;
+  }
+}

@@ -1,0 +1,19 @@
+.products__main-headline {
+  @include font-size-36;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 49px;
+    padding-bottom: 149px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,45 @@
+.page {
+  overflow-x: hidden;
+}
+
+.page-body {
+  padding: 0;
+  margin: 0;
+  font-family: $Oswald;
+  font-weight: 400;
+  color: $basic-black-color;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  overflow-x: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-family: $Oswald;
+  font-weight: normal;
+  width: 280px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-white-color;
+  background-color: $basic-green;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

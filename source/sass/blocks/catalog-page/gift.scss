@@ -1,0 +1,86 @@
+.gift {
+  width: 100%;
+  height: 289px;
+  background-color: $basic-green;
+  background-image: url("../img/gift-photo-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 57px;
+  margin-bottom: 35px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 68px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet.png");
+    margin-bottom: 76px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: 79.8%;
+    right: 0;
+    width: 20.1%;
+    height: 290px;
+    background-image: url("../img/gift-photo-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-mobile@2x.png");
+    }
+  }
+}
+
+.gift__conditions {
+  position: relative;
+  width: 161px;
+  margin: 0 auto;
+  padding-top: 187px;
+  font-family: $Arial;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white-color;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    padding-top: 10%;
+    padding-left: 59.7%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 161px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 186px;
+    padding-left: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    top: 58px;
+    left: 26%;
+    background-image: url("../img/icon-gift.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 13.5%;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 27%;
+    }
+  }
+}

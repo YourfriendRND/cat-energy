@@ -1,0 +1,31 @@
+.questionnaire-legend {
+  //@include outline;
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 32px;
+  padding-left: 3px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    padding-top: 13px;
+    padding-bottom: 93px;
+    padding-left: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-left: 81px;
+    padding-bottom: 0;
+  }
+}
+
+.questionnaire-legend__text {
+  font-family: $Arial;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}

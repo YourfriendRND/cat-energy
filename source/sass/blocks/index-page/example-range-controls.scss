@@ -1,0 +1,161 @@
+.example-range-controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-gray;
+    width: 100%;
+    padding-top: 353px;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 364px;
+    padding-left: 38px;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: 60px;
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.example-range-controls__value {
+  margin-bottom: 35px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-family: $Oswald;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-black-color;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted $special-grey;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    z-index: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      border-bottom-style: solid;
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  &--min {
+    padding-right: 0;
+    margin-left: 0;
+  }
+
+  &--max {
+    margin-left: 0;
+    padding-left: 0;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 18px;
+    }
+  }
+}
+
+.example-range-controls__scale {
+  margin-top: 10px;
+  margin-left: 14px;
+  margin-right: 14px;
+  height: 14px;
+  width: 86px;
+  background-color: $basic-white-color;
+  border-radius: 6px;
+  border: 1px solid $special-grey;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-top: 22px;
+    margin-left: 16px;
+    margin-right: 25px;
+    width: 428px;
+    height: 6px;
+    background-color: $special-gray-second;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    padding: 0;
+    margin-left: 25px;
+    margin-top: 13px;
+  }
+}
+
+.example-range-controls__bar {
+  margin-top: 4px;
+  margin-left: 9px;
+  width: 35px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -20px;
+    left: 45.3%;
+    width: 35px;
+    height: 35px;
+    background-color: $basic-white-color;
+    border-radius: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -20px;
+    left: 44%;
+  }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      filter: drop-shadow(0 2px 4px $black-shadow-button);
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet-width) {
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+      border: 1px solid $basic-green;
+      box-sizing: border-box;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      left: 38%;
+      top: 40%;
+      width: 8px;
+      height: 8px;
+      background-color: $basic-green;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.work-description__headline {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black-color;
+  padding-top: 27px;
+  padding-bottom: 39px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
